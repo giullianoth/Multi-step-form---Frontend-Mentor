@@ -7,7 +7,7 @@ const Confirm = () => {
             <div>
                 <img src={iconThankYou} alt="Thank you!" className={styles.confirm__icon} />
 
-                <header className="title">
+                <header className={`title ${styles.confirm__title}`}>
                     <h2>Thank you!</h2>
                     <p className={styles.confirm__text}>Thanks for confirming your subscription! We hope you have fun
                         using our platform. If you ever need support, please feel free
