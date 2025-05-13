@@ -1,0 +1,62 @@
+.summary {
+    background-color: var(--blue-100);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.summary__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary__row:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.summary__title.bordered {
+    border-bottom: 1px solid var(--purple-200);
+    padding-bottom: 20px;
+}
+
+.summary__title h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: var(--font-medium);
+}
+
+.summary__title span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+    transition: var(--transition);
+}
+
+.summary__title span:hover {
+    color: var(--purple-600);
+}
+
+.summary__title .summary__rowPrice {
+    font-weight: var(--font-bold);
+}
+
+.summary__rowPrice {
+    color: var(--blue-950);
+}
+
+.summary__total {
+    padding-inline: 20px;
+}
+
+.summary__totalPrice {
+    font-size: 1.1em;
+    font-weight: var(--font-bold);
+    color: var(--purple-600);
+}
+
+@media screen and (min-width: 992px) {
+    .summary__totalPrice {
+        font-size: 1.4em;
+    }
+}

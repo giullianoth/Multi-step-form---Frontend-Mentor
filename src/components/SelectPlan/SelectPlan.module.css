@@ -1,0 +1,96 @@
+.selectPlan__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.selectPlan__labelContent {
+    display: flex;
+    column-gap: 12px;
+}
+
+.selectPlan__title {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.selectPlan__price {
+    color: var(--grey-500);
+    margin-bottom: 5px;
+}
+
+.selectPlan__choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--blue-100);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.selectPlan__choose input {
+    display: none;
+}
+
+.selectPlan__choose input.monthly:checked ~ .chooseLabel.monthly,
+.selectPlan__choose input.yearly:checked ~ .chooseLabel.yearly {
+    color: var(--blue-950);
+}
+
+.selectPlan__choose input.monthly:checked ~ .switch .button {
+    transform: none;
+}
+
+.selectPlan__choose input.yearly:checked ~ .switch .button {
+    transform: translateX(100%);
+}
+
+.selectPlan__choose .chooseLabel {
+    cursor: pointer;
+    font-weight: var(--font-bold);
+    transition: var(--transition);
+}
+
+.selectPlan__choose .switch {
+    width: 36px;
+    height: 18px;
+    background-color: var(--blue-950);
+    border-radius: 18px;
+    position: relative;
+    display: flex;
+}
+
+.selectPlan__choose .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: var(--blue-100);
+    border-radius: 50%;
+    border: 3px solid var(--blue-950);
+    transition: var(--transition);
+}
+
+.selectPlan__choose .clickable {
+    flex-basis: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .selectPlan__form {
+        flex-direction: row;
+    }
+
+    .selectPlan__label {
+        flex-basis: calc(((100% / 3) - 12px) + 4px);
+    }
+
+    .selectPlan__labelContent {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}

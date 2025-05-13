@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  /* COLORS */
+  /* Primary */
+  --blue-950: hsl(213, 96%, 18%);
+  --purple-600: hsl(243, 100%, 62%);
+  --blue-300: hsl(228, 100%, 84%);
+  --blue-200: hsl(206, 94%, 87%);
+  --red-500: hsl(354, 84%, 57%);
+
+  --blue-950-hover: hsl(213, 71%, 32%);
+  --purple-600-hover: hsl(244, 98%, 77%);
+
+  /* Neutral */
+  --grey-500: hsl(231, 11%, 63%);
+  --purple-200: hsl(229, 24%, 87%);
+  --blue-100: hsl(218, 100%, 97%);
+  --blue-50: hsl(231, 100%, 99%);
+  --white: hsl(0, 100%, 100%);
+
+  /* TYPOGRAPHY */
+  /* Body Copy */
+  --font-size-paragraph: 16px;
+
+  /* Font */
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-ubuntu);
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-regular);
+  color: var(--grey-500);
+  background-color: var(--blue-100);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--blue-950);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue-950);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--purple-600);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+label p {
+  color: var(--blue-950);
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label p .error {
+  font-weight: var(--font-bold);
+  color: var(--red-500);
+}
+
+input[type="text"], input[type="email"] {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: var(--font-medium);
+  color: var(--blue-950);
+  padding: 12px;
+  border: 1px solid var(--purple-200);
+  border-radius: 5px;
+  outline: none;
+  transition: var(--transition);
+}
+
+input[type="text"].invalid, input[type="email"].invalid {
+  border-color: var(--red-500) !important;
+}
+
+input[type="text"]:hover, input[type="email"]:hover,
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="text"].valid, input[type="email"].valid {
+  border-color: var(--purple-600);
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+  color: var(--purple-200);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root main {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 375px) {
+  label p .error {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2em;
+  }
+}
