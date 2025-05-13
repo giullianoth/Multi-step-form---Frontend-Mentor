@@ -1,5 +1,11 @@
 .confirm {
     text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 440px;
+    margin-inline: auto;
 }
 
 .confirm__icon {

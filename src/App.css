@@ -75,7 +75,18 @@
   padding-block: 40px 120px;
 }
 
-.form {
+/* .form {
+  padding: 40px 20px;
+  width: calc(100% - 40px);
+  max-width: 480px;
+  margin-inline: auto;
+  margin-top: -80px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
+} */
+
+.formWrapper {
   padding: 40px 20px;
   width: calc(100% - 40px);
   max-width: 480px;
@@ -91,6 +102,13 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
+  
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  background-color: var(--white);
+  width: 100%;
+  padding: 20px;
 }
 
 .labelSelect input[type="checkbox"], .labelSelect input[type="radio"] {
@@ -145,9 +163,27 @@
 
   .form {
     width: 100%;
+  }
+
+  .formWrapper {
+    width: 100%;
     margin: 0;
     padding-inline: 100px;
+    padding-bottom: 0;
     box-shadow: none;
     max-width: none;
+  }
+
+  .form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form .actions {
+    margin: 0;
+    padding-inline: 100px;
+    padding-block: 0 40px;
   }
 }

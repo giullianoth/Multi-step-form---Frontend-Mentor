@@ -40,7 +40,9 @@ function App() {
 
           <section className="form">
             <form onSubmit={handleSubmit}>
-              <stepState.component />
+              <div className="formWrapper">
+                <stepState.component />
+              </div>
 
               {stepState.step !== 5 &&
                 <div className="actions">
