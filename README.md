@@ -51,9 +51,9 @@ Captura de tela em 375px | Screenshot in 375px
 
 ---
 
-Você também pode conferir a página acessando [este link](#).
+Você também pode conferir a página acessando [este link](https://multi-step-form-pied-three.vercel.app/).
 
-*You can also check the page by accessing [this link](#).*
+*You can also check the page by accessing [this link](https://multi-step-form-pied-three.vercel.app/).*
 
 ## Tecnologias utilizadas | Technologies used
 
