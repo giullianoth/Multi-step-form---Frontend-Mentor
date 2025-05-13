@@ -67,8 +67,8 @@ function App() {
       </main>
 
       <footer className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Giulliano Guimarães</a>.
+        Challenge by <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/giullianoth" target="_blank">Giulliano Guimarães</a>.
       </footer>
     </>
   )
